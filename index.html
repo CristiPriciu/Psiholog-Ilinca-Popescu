@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Project 1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Smooth scroll to anchor script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("a").on('click', function(event) {
+			if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+					window.location.hash = hash;
+				});
+			} 
+		});
+	});
+</script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-hand-o-left,.fa-question-circle-o {font-size:200px}
+/* smooth scroll to anchor CSS */
+body, html, .main {
+	height: 100%;
+}
+
+section {
+	min-height: 100%;
+}
+</style>
+<body>
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-red w3-card w3-left-align w3-large">
+			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="#despre" class="w3-bar-item w3-button w3-padding-large w3-white">HOME</a>
+			<a href="#despre" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Despre</a>
+			<a href="#specializari" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Specializari</a>
+			<a href="#faq" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Intrebari</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+		</div>
+		<!-- Navbar on small screens -->
+		<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+			<a href="#despre" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+			<a href="#despre" class="w3-bar-item w3-button w3-padding-large">Despre</a>
+			<a href="#specializari" class="w3-bar-item w3-button w3-padding-large">Specializari</a>
+			<a href="#faq" class="w3-bar-item w3-button w3-padding-large">Intrebari</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+		</div>
+	</div>
+	<!-- First Grid -->
+	<div id="despre" class="w3-row-padding w3-padding-64 w3-container">
+		<div class="w3-content">
+			<div class="w3-third w3-center w3-section w3-padding-small">
+				<img src="mainpic.jpg" class="w3-round" alt="mainpic" style="width:100%;max-width:300px;"> 
+			</div>
+
+			<div class="w3-twothird w3-section">
+				<h1>Ilinca Popescu</h1>
+				<h5 class="w3-padding-32">Bine ai venit! Sunt Ilinca Popescu. Cred ca toti indivizii au abilitatea de isi realiza potentialul si unicile lor personalitati. Imputernicesc clientii prin terapia conversationala, ii asist sa descopere calea spre vietile lor fericite si autentice.</h5>
+				<p class="w3-text-grey">Sunt doctor psihoterapeut cu drept de libera practica, atestat Colegiului Psihologilor din Romania, licentiata in psihologie, cu 14 ani de experienta practica in consilierea personala. Voi folosi timpul nostru impreuna pentru a te asista in explorarea sinelui si a incuraja perspective asupra situatiei vietii tale.</p>
+				<a href="#contact" class="w3-button w3-red w3-hover-light-grey w3-large">Contacteaza-ma</a>
+			</div>
+		</div>
+	</div>
+	<!-- Second Grid -->
+	<div id="specializari" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+		<div class="w3-content">
+			<div class="w3-twothird">
+				<h1>Specializari</h1>
+				<h5 class="w3-padding-32">Sunt specializata in terapia familiei, mariajului, depresiei si increderii in sine. De asemenea, in tratamentul fobiilor si anxietatilor. Eliberez avize psihologice si evaluari clinice.</h5>
+
+				<p class="w3-text-grey">In sedintele cu clientii ma concentrez intai pe scoaterea acestora din criza existentiala in care se afla si pe reducerea sau eliminarea simptomelor. Urmeaza o intarire a eului si a capacitatilor integrative ale personalitatii. Urmaresc reducerea, sau inlaturarea daca este posibil a acelor conditii de mediu care produc sau mentin comportamentele de tip dezadaptiv.</p>
+			</div>
+			<div class="w3-third w3-center">
+				<i class="fa fa-hand-o-left w3-padding-64 w3-text-red"></i>
+			</div>
+		</div>
+	</div>
+	<!-- Third Grid -->
+	<div id="faq" class="w3-row-padding w3-padding-64 w3-container">
+		<div class="w3-content">
+			<div class="w3-third w3-center">
+				<i class="fa fa-question-circle-o w3-padding-64 w3-text-red w3-margin-right"></i>
+			</div>
+			<div class="w3-twothird">
+				<h1>Intrebari</h1>
+				<h5 class="w3-padding-32">Ce sa astept de la prima intalnire?</h5>
+				<p class="w3-text-grey">Prima intalnire implica evaluarea detaliata a ta si a situatiei tale, a problemelor curente, a puterilor si resurselor care pot fi implicate in planul de tratament. Scopul meu este sa pacientul sa fie confortabil si sa vorbeasca deschis.</p>
+
+				<h5 class="w3-padding-32">Cat de lunga este o sedinta?</h5>
+				<p class="w3-text-grey">Sedintele sunt lungi de 1 ora si de obicei au loc o data pe saptamana. Depinzand de natura si severitatea problemelor tale, s-ar putea sa aiba loc mai rar sau mai des. Sedintele saptamanale dezvolta o puternica relatie terapeutica si da avant scopurilor tratamentului.</p>
+				<h5 class="w3-padding-32">Cat va dura terapia?</h5>
+				<p class="w3-text-grey">Acest lucru este relativ greu de estimat. Cercetarile arata perioada terapiei a fi variabila si influentata de interventiile terapeutice folosite, de taria relatiei cu terapistul precum si de factori specifici tie. Alti factori pot include obiectivele si caracteristicile tale personale, natura, severitatea si complexitatea problemelor dar si factori externi ce se intampla in viata.</p>
+
+				<h5 class="w3-padding-32">Imi vei prescrie medicamente?</h5>
+				<p class="w3-text-grey">Psihologii licentiati nu prescriu medicamente. Respectam decizia individuala de a folosi sau nu medicamente si putem colabora cu doctorul de familie sau alti medici in aceasta privinta.</p>
+
+			</div>
+		</div>
+	</div>
+	<!-- Motto -->
+	<div class="w3-container w3-light-grey w3-center w3-opacity w3-padding-64">
+		<h1 class="w3-margin w3-xlarge">“Fericirea nu este ceva gata facut. Ea vine din propriile tale actiuni.”</h1>
+	</div>
+	<!--Contact section -->
+	<div id="contact" class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+		<h2 class="w3-wide w3-center">CONTACT</h2>
+		<p class="w3-opacity w3-center"><i>Te rog contacteaza-ma telefonic intre orele 9:00 si 18:00. Incerc sa raspund mesajelor email in maxim 48 de ore.</i></p>
+		<div class="w3-row w3-padding-32">
+			<div class="w3-col m6 w3-large w3-margin-bottom">
+				<i class="fa fa-map-marker" style="width:30px"></i> Bucuresti, Romania<br>
+				<i class="fa fa-phone" style="width:30px"></i> Telefon: 0720 149 502<br>
+				<i class="fa fa-envelope" style="width:30px"> </i> Email: ilinca.popescu@mail.com<br>
+			</div>
+			<div class="w3-col m6">
+				<form action="/action_page.php" target="_blank">
+					<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+						<div class="w3-half">
+							<input class="w3-input w3-border" type="text" placeholder="Nume" required name="Name">
+						</div>
+						<div class="w3-half">
+							<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+						</div>
+					</div>
+					<input class="w3-input w3-border" type="text" placeholder="Mesaj" required name="Message">
+					<button class="w3-button w3-black w3-section w3-right" type="submit">TRIMITE</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--Google maps -->
+	<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
+	<script>
+		function myMap() {
+			myCenter=new google.maps.LatLng(44.4437911,26.1498687);
+			var mapOptions= {
+				center:myCenter,
+				zoom:16, scrollwheel: true, draggable: true,
+				mapTypeId:google.maps.MapTypeId.ROADMAP
+			};
+			var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+			var marker = new google.maps.Marker({
+				position: myCenter,
+			});
+			marker.setMap(map);
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYqxMHFmSuv6FE__Ct75obdY-1HYOQdEE&callback=myMap"></script>
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+		<div class="w3-xlarge w3-padding-32">
+			<i class="fa fa-facebook-official w3-hover-opacity"></i>
+			<i class="fa fa-instagram w3-hover-opacity"></i>
+			<i class="fa fa-snapchat w3-hover-opacity"></i>
+			<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+			<i class="fa fa-twitter w3-hover-opacity"></i>
+			<i class="fa fa-linkedin w3-hover-opacity"></i>
+		</div>
+		<p><i class="fa fa-copyright"></i> Cristi Priciu 2017</p>
+	</footer>
+	<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+	var x = document.getElementById("navDemo");
+	if (x.className.indexOf("w3-show") == -1) {
+		x.className += " w3-show";
+	} else { 
+		x.className = x.className.replace(" w3-show", "");
+	}
+}
+</script>
+</body>
+</html>
